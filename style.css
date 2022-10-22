@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    margin-top: 250px;
+    margin-bottom: 250px;
+   background-color: #c1702c;
+}
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url(digital-7/digital-7.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.grid {
+    padding: 10px;
+    background-color: #414141;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    width: 450px;
+    height: 700px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: #414141;
+    color: white;
+    border-radius: 12px;
+    margin: 2px 2px 2px 2px;
+}
+
+.grid>button:hover {
+    background-color: #ebebeb;
+    color: black;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: #acc560;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.output .previousOperation {
+    color: black;
+    font-size: 2rem;
+    font-family: 'digital-7', sans-serif;
+}
+
+.output .currentOperation {
+    color: black;
+    font-size: 3rem;
+    font-family: 'digital-7', sans-serif;
+}
+
+#equals {
+    background-color: #d58200;
+}
+
+#equals:hover{
+background-color: #804e00;
+transition: 0.25s ease-in-out;
+}
+
+#delete{
+background-color: #c62f42;
+}
+
+#delete:hover{
+background-color: #711b26;
+transition: 0.25s ease-in-out;
+}
